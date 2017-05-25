@@ -97,6 +97,7 @@
     <Content Include="app\angular.js" />
     <Content Include="app\img\camel.jfif" />
     <Content Include="app\app.js" />
+    <Content Include="app\phone-list.component.js" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
