@@ -2,7 +2,7 @@
 
 // Register `phoneList` component, along with its associated controller and template
 angular.
-  module('phonecatApp').
+  module('app').
   component('phoneList', {
     template:
         '<ul>' +

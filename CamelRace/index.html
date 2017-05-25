@@ -1,28 +1,39 @@
 ﻿<!doctype html>
-<html lang="en" ng-app="phonecatApp">
+<html lang="en" ng-app="app">
 <head>
     <meta charset="utf-8">
-    <title>Google Phone Gallery</title>
+    <title>CamelRace</title>
     <!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="app.css" />-->
     <!--<script src="bower_components/angular/angular.js"></script>-->
-
+    <!--<script src="app/app.js"></script>-->
+    <link rel="stylesheet" href="app.css" />
     <script src="app/angular.js"></script>
     <script src="app/app.js"></script>
     <script src="app/phone-list.component.js"></script>
 </head>
-<body ng-controller="PhoneListController">
+<body ng-controller="graphController">
     
+    <div class="chart" style="width:{{width}}px; height:{{height}}px;">
+
+        <!-- Labels -->
+        <div class="y" style="width:{{height}}px;">{{yAxis}}</div>
+        <!--<div class="x">{{xAxis}}</div>-->
+
+        <!-- Data -->
+
+        <div ng-repeat="bar in data" class="bar" style="height:{{width / data.length - 5}}px; width:{{bar.value / max * height}}px; top:{{$index / data.length * width}}px;"></div>
+    </div>
     <!--step 2-->
-    <ul>
+    <!--<ul>
         <li ng-repeat="phone in tasks">
             <span>{{phone.name}}</span>
             <p>{{phone.total}}</p>
         </li>
-    </ul>
+    </ul>-->
 
     <!--step 3-->
-    <phone-list></phone-list>
+    <!--<phone-list></phone-list>-->
 
 </body>
 </html>
