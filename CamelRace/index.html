@@ -1,18 +1,23 @@
-﻿<!DOCTYPE html>
- 
-<html ng-app="app">
+﻿<!doctype html>
+<html lang="en" ng-app="phonecatApp">
 <head>
-    <title></title>
+    <meta charset="utf-8">
+    <title>Google Phone Gallery</title>
+    <!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="app.css" />-->
+    <!--<script src="bower_components/angular/angular.js"></script>-->
+   
+    <script src="app/angular.js"></script>
+    <script src="app/app.js"></script>
 </head>
-<body ng-controller="Main as vm">
- 
-<input type="text" ng-model="vm.food" placeholder="Enter food" />
- 
-<p>Sriracha sauce is great with {{vm.food}}!</p>
- 
-<script src="Scripts/angular.min.js"></script>
-<script src="app/app.module.js"></script>
-<script src="app/main.js"></script>
- 
+<body ng-controller="PhoneListController">
+
+<ul>
+    <li ng-repeat="phone in tasks">
+        <span>{{phone.name}}</span>
+        <p>{{phone.total}}</p>
+    </li>
+</ul>
+
 </body>
 </html>

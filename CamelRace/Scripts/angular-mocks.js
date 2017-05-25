@@ -2467,15 +2467,15 @@ angular.module('ngMockE2E', ['ng']).config(['$provide', function($provide) {
  * ```js
  *   var myAppDev = angular.module('myAppDev', ['myApp', 'ngMockE2E']);
  *   myAppDev.run(function($httpBackend) {
- *     var phones = [{name: 'phone1'}, {name: 'phone2'}];
+ *     var tasks = [{name: 'phone1'}, {name: 'phone2'}];
  *
- *     // returns the current list of phones
- *     $httpBackend.whenGET('/phones').respond(phones);
+ *     // returns the current list of tasks
+ *     $httpBackend.whenGET('/tasks').respond(tasks);
  *
- *     // adds a new phone to the phones array
- *     $httpBackend.whenPOST('/phones').respond(function(method, url, data) {
+ *     // adds a new phone to the tasks array
+ *     $httpBackend.whenPOST('/tasks').respond(function(method, url, data) {
  *       var phone = angular.fromJson(data);
- *       phones.push(phone);
+ *       tasks.push(phone);
  *       return [200, phone, {}];
  *     });
  *     $httpBackend.whenGET(/^\/templates\//).passThrough(); // Requests for templates are handled by the real server
@@ -2493,19 +2493,19 @@ angular.module('ngMockE2E', ['ng']).config(['$provide', function($provide) {
  *   myApp.controller('MainCtrl', function MainCtrl($http) {
  *     var ctrl = this;
  *
- *     ctrl.phones = [];
+ *     ctrl.tasks = [];
  *     ctrl.newPhone = {
  *       name: ''
  *     };
  *
  *     ctrl.getPhones = function() {
- *       $http.get('/phones').then(function(response) {
- *         ctrl.phones = response.data;
+ *       $http.get('/tasks').then(function(response) {
+ *         ctrl.tasks = response.data;
  *       });
  *     };
  *
  *     ctrl.addPhone = function(phone) {
- *       $http.post('/phones', phone).then(function() {
+ *       $http.post('/tasks', phone).then(function() {
  *         ctrl.newPhone = {name: ''};
  *         return ctrl.getPhones();
  *       });
@@ -2518,15 +2518,15 @@ angular.module('ngMockE2E', ['ng']).config(['$provide', function($provide) {
  *   var myAppDev = angular.module('myAppE2E', ['myApp', 'ngMockE2E']);
  *
  *   myAppDev.run(function($httpBackend) {
- *     var phones = [{name: 'phone1'}, {name: 'phone2'}];
+ *     var tasks = [{name: 'phone1'}, {name: 'phone2'}];
  *
- *     // returns the current list of phones
- *     $httpBackend.whenGET('/phones').respond(phones);
+ *     // returns the current list of tasks
+ *     $httpBackend.whenGET('/tasks').respond(tasks);
  *
- *     // adds a new phone to the phones array
- *     $httpBackend.whenPOST('/phones').respond(function(method, url, data) {
+ *     // adds a new phone to the tasks array
+ *     $httpBackend.whenPOST('/tasks').respond(function(method, url, data) {
  *       var phone = angular.fromJson(data);
- *       phones.push(phone);
+ *       tasks.push(phone);
  *       return [200, phone, {}];
  *     });
  *   });
@@ -2539,7 +2539,7 @@ angular.module('ngMockE2E', ['ng']).config(['$provide', function($provide) {
  *   </form>
  *   <h1>Phones</h1>
  *   <ul>
- *     <li ng-repeat="phone in $ctrl.phones">{{phone.name}}</li>
+ *     <li ng-repeat="phone in $ctrl.tasks">{{phone.name}}</li>
  *   </ul>
  *   </div>
  * </file>
