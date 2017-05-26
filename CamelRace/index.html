@@ -13,17 +13,18 @@
     <script src="app/phone-list.component.js"></script>
 </head>
 <body ng-controller="graphController">
-    
-    <div class="chart" style="width:{{width}}px; height:{{height}}px;">
+
+    <!--<div class="chart" style="width:{{width}}px; height:{{height}}px;">-->
+    <div class="chart" style="width:{{width}}px; height:{{(width / (data.length)) * data.length}}px;">
 
         <!-- Labels -->
-        <div class="y" style="width:{{height}}px;">{{yAxis}}</div>
-        <!--<div class="x">{{xAxis}}</div>-->
-
+        <div class="y" style="width:{{height}}px;">{{yAxis}}</div> <!--Vertical axis text-->
+        <div class="x">{{xAxis}}</div> <!--Horizontal axis text-->
         <!-- Data -->
-
-        <div ng-repeat="bar in data" class="bar" style="height:{{width / data.length - 5}}px; width:{{bar.value / max * height}}px; top:{{$index / data.length * width}}px;"></div>
+        <div ng-repeat="bar in data" class="bar" style="height:{{width / data.length - 40}}px; width:{{bar.value / max * height}}px; top:{{$index / data.length * width}}px;"></div>
     </div>
+
+
     <!--step 2-->
     <!--<ul>
         <li ng-repeat="phone in tasks">
@@ -31,7 +32,6 @@
             <p>{{phone.total}}</p>
         </li>
     </ul>-->
-
     <!--step 3-->
     <!--<phone-list></phone-list>-->
 

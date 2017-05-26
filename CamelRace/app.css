@@ -3,8 +3,9 @@ body {
 }
 
 .chart {
-  border-left: 1px solid black;
-  /*border-bottom: 1px solid black;*/
+  border-left: 1px solid black; /*y axis*/
+  border-bottom: 1px solid black;/*x axis*/
+   
   margin: 60px auto;
   position: relative;
   list-style: none;
@@ -32,13 +33,12 @@ body {
   bottom: 0;
 }
 .bar:nth-of-type(even) {
-  background: red;
+  background: CornflowerBlue;
 }
 .bar span {
   position: absolute;
   bottom: -10px;
-  left: 50%;
-  /*transform: rotate(-90deg) translateY(-50%);*/
+  left: 50%;  
   transform-origin: left top;
   font-weight: bold;
   opacity: 0;
