@@ -1,15 +1,12 @@
-﻿//<div ng-repeat="bar in data" class="bar" style="height:{{width / data.length - 40}}px; width:{{bar.value / max * height}}px; top:{{$index / data.length * width}}px;"></div>
-"use strict";
+﻿"use strict";
 
-// Register `phoneList` component, along with its associated controller and template
+// Register `barList` component, along with its associated controller and template
 angular.
     module("app").
     component("barList", {   
-        template:
-        //'<div ng-repeat="bar in $ctrl.data" class="bar" style="height:{{width / data.length - 40}}px; width:{{bar.value / max * height}}px; top:{{$index / data.length * width}}px;"></div>',
-            //'<div ng-repeat="bar in $ctrl.data" class="bar" style="height:{{$ctrl.width / $ctrl.data.length - 40}}px;width:{{bar.value /  $ctrl.max * $ctrl.height}}px; top:{{$index / $ctrl.data.length * $ctrl.width}}px;">OH!{{$ctrl.width}}_{{$ctrl.height}}_{{$ctrl.data.length}} ||{{$ctrl.width / $ctrl.data.length - 40}}**{{bar.value /  $ctrl.max * $ctrl.height}}**{{$index / $ctrl.data.length *  $ctrl.width}} </div>',
+        template:                    
         '<div ng-repeat="bar in $ctrl.data" class="bar" style="height:{{$ctrl.width / $ctrl.data.length - 40}}px;width:{{bar.value /  $ctrl.max * $ctrl.height}}px; top:{{$index / $ctrl.data.length * $ctrl.width}}px;"> </div>',
-            //'<div ng-repeat="bar in $ctrl.data" class="bar" style="height:{{$ctrl.width / $ctrl.data.length - 40}}px; width:{{bar.value / max * $ctrl.height}}px;"></div>',
+            
         controller: function barListController() {
 
             this.width = 600;
