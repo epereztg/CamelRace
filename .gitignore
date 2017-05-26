@@ -1,1 +1,7 @@
+<<<<<<< HEAD
 CamelRace/obj
+=======
+.vs/
+CamelRace/bin/
+CamelRace/obj/
+>>>>>>> StartingWithComponents

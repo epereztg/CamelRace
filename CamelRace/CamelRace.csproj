@@ -99,6 +99,7 @@
     <Content Include="app\img\camel.jfif" />
     <Content Include="app\app.js" />
     <Content Include="app\phone-list.component.js" />
+    <Content Include="app\bar-list.component.js" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
