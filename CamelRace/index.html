@@ -11,6 +11,7 @@
     <script src="app/angular.js"></script>
     <script src="app/app.js"></script>
     <script src="app/phone-list.component.js"></script>
+    <script src="app/bar-list.component.js"></script>
 </head>
 <body ng-controller="graphController">
 
@@ -21,7 +22,9 @@
         <div class="y" style="width:{{height}}px;">{{yAxis}}</div> <!--Vertical axis text-->
         <div class="x">{{xAxis}}</div> <!--Horizontal axis text-->
         <!-- Data -->
-        <div ng-repeat="bar in data" class="bar" style="height:{{width / data.length - 40}}px; width:{{bar.value / max * height}}px; top:{{$index / data.length * width}}px;"></div>
+        <!--<div ng-repeat="bar in data" class="bar" style="height:{{width / data.length - 40}}px; width:{{bar.value / max * height}}px; top:{{$index / data.length * width}}px;"></div>-->
+        <!--<div ng-repeat="bar in data" class="bar" style="height:{{width / data.length - 40}}px;width:{{bar.value / max * height}}px; top:{{$index / data.length * width}}px;">{{width / data.length - 40}}**{{bar.value / max * height}}**{{$index / data.length * width}} </div>-->
+        <bar-list></bar-list>
     </div>
 
 
