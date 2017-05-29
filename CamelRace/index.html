@@ -3,16 +3,24 @@
 <head>
     <meta charset="utf-8">
     <title>CamelRace</title>
-    <!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="app.css" />-->
-    <!--<script src="bower_components/angular/angular.js"></script>-->
-    <!--<script src="app/app.js"></script>-->
     <link rel="stylesheet" href="app.css" />
+    <link href="app/app.animation.css" rel="stylesheet" />
+    
+    <script src="app/jquery-3.2.1.min.js"></script>
     <script src="app/angular.js"></script>
     <script src="app/app.js"></script>
-    <script src="app/phone-list.component.js"></script>
-    <script src="app/bar-list.component.js"></script>
+    <!--<script src="app/angular-route.js"></script>-->
+
+    <!--<script src="app/app.module.js"></script>-->
+
+    <!--<script src="app/app.config.js"></script>-->
+    <!--<script src="app/bar-list/bar-list.module.js"></script>-->
+    <script src="app/bar-list/bar-list.component.js"></script>
+   
+
 </head>
+
+
 <body ng-controller="graphController">
 
     <!--<div class="chart" style="width:{{width}}px; height:{{height}}px;">-->
@@ -20,14 +28,12 @@
         <!-- Labels -->
         <div class="y" style="width:{{height}}px;">{{yAxis}}</div> <!--Vertical axis text-->
         <div class="x">{{xAxis}}</div> <!--Horizontal axis text-->
-        <!-- Data -->
-        <!--<div ng-repeat="bar in data" class="bar" style="height:{{width / data.length - 40}}px; width:{{bar.value / max * height}}px; top:{{$index / data.length * width}}px;"></div>-->
-        <!--<div ng-repeat="bar in data" class="bar" style="height:{{width / data.length - 40}}px;width:{{bar.value / max * height}}px; top:{{$index / data.length * width}}px;">{{width / data.length - 40}}**{{bar.value / max * height}}**{{$index / data.length * width}} </div>-->
+        <!-- Data -->        
         <bar-list></bar-list>
-        
-
-        <!--<div class="dot dot{{$index}}" ng-repeat="point in data" style="bottom:calc({{point.yValue}}/{{maxY}}*{{height}}px - 5px); left:calc({{point.xValue}}/{{maxX}}*{{width}}px - 5px);" data-title="{{point.label}}: {{point.yValue}}"></div>-->       
+        <!--<div ng-view></div>-->
     </div>
-
+    
+    
+<div ng-view></div>
 </body>
 </html>

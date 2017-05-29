@@ -95,11 +95,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app.css" />
+    <Content Include="app\angular-route.js" />
     <Content Include="app\angular.js" />
+    <Content Include="app\app.animation.css" />
+    <Content Include="app\app.config.js" />
+    <Content Include="app\bar-list\bar-list.module.js" />
+    <Content Include="app\bar-list\bar-list.template.html" />
     <Content Include="app\img\camel.jfif" />
     <Content Include="app\app.js" />
-    <Content Include="app\phone-list.component.js" />
-    <Content Include="app\bar-list.component.js" />
+    <Content Include="app\jquery-3.2.1.min.js" />
+    <Content Include="app\bar-list\bar-list.component.js" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
