@@ -5,7 +5,7 @@ angular.
     module("app").
     component("barList", {   
         template:                    
-        '<div ng-repeat="bar in $ctrl.data" class="bar" style="height:{{$ctrl.width / $ctrl.data.length - 40}}px;width:{{bar.total /  $ctrl.max * $ctrl.height}}px; top:{{$index / $ctrl.data.length * $ctrl.width}}px;">' + '<div>&#11044;</div>' + '</div>',
+        '<div ng-repeat="bar in $ctrl.data" class="bar" style="height:{{$ctrl.width / $ctrl.data.length - 40}}px;width:{{bar.total /  $ctrl.max * $ctrl.height}}px; top:{{$index / $ctrl.data.length * $ctrl.width}}px;">' + '<div align="right" vertical-align="middle";>&#11044;</div>' + '</div>',
         //&#11044;
 
 
