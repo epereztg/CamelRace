@@ -101,6 +101,9 @@
     <Content Include="app\app.config.js" />
     <Content Include="app\bar-list\bar-list.module.js" />
     <Content Include="app\bar-list\bar-list.template.html" />
+    <Content Include="app\graph\graph.module.js" />
+    <Content Include="app\graph\graph.component.js" />
+    <Content Include="app\graph\graph.template.html" />
     <Content Include="app\img\camel.jfif" />
     <Content Include="app\app.js" />
     <Content Include="app\jquery-3.2.1.min.js" />

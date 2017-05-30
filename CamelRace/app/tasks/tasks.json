@@ -1,18 +1,62 @@
 ﻿[
-  {
-    "name": 0,         
-    "total": "450", 
-    "current": "20"
-  }, 
-  {
-    "name": 0,         
-    "total": "200", 
-    "current": "150"
-  }, 
-  {
-    "name": 0,         
-    "total": "50", 
-    "current": "50"
-  }
-  
-]
+        {
+            "label": "Task",
+            "total": 36,
+            "current": 10
+        },
+        {
+            "label": "Task",
+            "total": 54,
+            "current": 10
+        },
+        {
+            "label": "Task",
+            "total": 62,
+            "current": 10
+        },
+        {
+            "label": "Task",
+            "total": 82,
+            "current": 10
+        },
+        {
+            "label": "Task",
+            "total": 96,
+            "current": 10
+        },
+        {
+            "label": "Task",
+            "total": 104,
+            "current": 10
+        },
+        {
+            "label": "Task",
+            "total": 122,
+            "current": 10
+        },
+        {
+            "label": "Task",
+            "total": 152,
+            "current": 10
+        },
+        {
+            "label": "Task",
+            "total": 176,
+            "current": 10
+        },
+        {
+            "label": "Task",
+            "total": 180,
+            "current": 10
+        },
+        {
+            "label": "Task",
+            "total": 252,
+            "current": 10
+        },
+        {
+            "label": "Task",
+            "total": 342,
+            "current": 10
+        }
+    ]

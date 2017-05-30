@@ -20,20 +20,16 @@
 
 <body ng-controller="graphController">    
     <!--<div class="chart" style="width:{{width}}px; height:{{height}}px;">-->
-    <div class="chart" style="width:{{width}}px; height:{{(width / (data.length)) * data.length}}px;">
-        <!-- Labels -->
-        <div class="y" style="width:{{height}}px;">{{yAxis}}</div> <!--Vertical axis text-->
-        <div class="x">{{xAxis}}</div> <!--Horizontal axis text-->
-        <!-- Data -->
-        <bar-list></bar-list>
-        <!--<div ng-view></div>-->
-    </div>
+    <!---->
+    
+<div class="chart" style="width:{{width}}px; height:{{(width / (data.length)) * data.length}}px;">
+    <!-- Labels -->
+    <div class="y" style="width:{{height}}px;">{{yAxis}}</div> <!--Vertical axis text-->
+    <div class="x">{{xAxis}}</div> <!--Horizontal axis text-->
+    <!-- Data -->
+    <bar-list></bar-list>
+</div>
 
-
-    <div class="view-container">
-        <div ng-view class="view-frame"></div>
-    </div>
-
-    <div ng-view></div>
+<graph></graph>
 </body>
 </html>
