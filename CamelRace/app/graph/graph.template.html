@@ -1,0 +1,7 @@
+﻿<div class="chart" style="width:{{$ctrl.width}}px; height:{{($ctrl.width / ($ctrl.data.length)) * $ctrl.data.length}}px;">
+    <!-- Labels -->
+    <div class="y" style="width:{{$ctrl.height}}px;">{{$ctrl.yAxis}}</div> <!--Vertical axis text-->
+    <div class="x">{{$ctrl.xAxis}}</div> <!--Horizontal axis text-->
+    <!-- Data -->
+    <bar-list></bar-list>
+</div>
