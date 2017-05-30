@@ -3,20 +3,8 @@
 // Register `barList` component, along with its associated controller and template
 angular.
     module("app").
-    component("barList", {
-        //template:       
-
-         
+    component("barList", {                 
         templateUrl: 'app/bar-list/bar-list.template.html',
-            //'<div ng-repeat="bar in $ctrl.data" class="bar bar-list-item" ' +
-            //'style="height:{{$ctrl.width / $ctrl.data.length - 45}}px;width:{{bar.total /  $ctrl.max * $ctrl.height}}px; top:{{$index / $ctrl.data.length * $ctrl.width}}px;">' +
-            //    '<div class="dot right tooltip">' +
-            //        '<span class="tooltiptext">{{(bar.current*100)/bar.total}}%</span>' +
-            //    '</div>' +
-            //'</div>',
-
-        //&#11044
-
         controller: function barListController() {
 
             this.width = 600;
