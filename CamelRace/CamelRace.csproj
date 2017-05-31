@@ -94,11 +94,11 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="app.css" />
-    <Content Include="app\angular-animate.js" />
-    <Content Include="app\angular.js" />
-    <Content Include="app\app.animation.css" />
-    <Content Include="app\app.config.js" />
+    <Content Include="app\css\app.css" />
+    <Content Include="app\js\angular-animate.js" />
+    <Content Include="app\js\angular.js" />
+    <Content Include="app\css\app.animation.css" />
+    <Content Include="app\js\app.config.js" />
     <Content Include="app\bar-list\bar-list.module.js" />
     <Content Include="app\bar-list\bar-list.template.html" />
     <Content Include="app\img\giphy.gif" />
@@ -106,7 +106,7 @@
     <Content Include="app\graph\graph.component.js" />
     <Content Include="app\graph\graph.template.html" />
     <Content Include="app\img\camel.jfif" />
-    <Content Include="app\app.js" />
+    <Content Include="app\js\app.js" />
     <Content Include="app\img\walkingCamel.gif" />
     <Content Include="app\bar-list\bar-list.component.js" />
     <Content Include="packages.config" />
@@ -136,8 +136,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="app\main.js" />
-    <Content Include="app\app.module.js" />
+    <Content Include="app\js\main.js" />
+    <Content Include="app\js\app.module.js" />
     <Content Include="index.html" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
