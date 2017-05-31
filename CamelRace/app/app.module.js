@@ -1,8 +1,4 @@
-//'use strict';
+'use strict';
 
-(function () {
-    'use strict';
-
-    angular.module('app', ['barList']);
-
-})();
+// Define the `app` module
+angular.module('app', []);
