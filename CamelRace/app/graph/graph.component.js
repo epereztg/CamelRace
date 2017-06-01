@@ -12,7 +12,7 @@ angular.
                 //self.tasks = response.data;
                 self.data = response.data;
 
-                self.width = 1200;
+                self.width = 600;
                 self.height = 600;
                 self.yAxis = "Ongoing Tasks";
                 self.xAxis = "Race!";
