@@ -2,13 +2,17 @@
   "name": "camel-race",
   "version": "1.0.0",
   "description": "Camel Race - tasks list app",
-  "entryPoint" :"D://Projects//CamelRace//CamelRace//app//js//app.js",
+  "entryPoint": "D://Projects//CamelRace//CamelRace//app//js//app.js",
   "main": "index.js",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-	
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "start":"echo \"Hola\"",
+    "gulp": "gulp",
+    "saludo": "echo \"Hola Elena\""
   },
   "repository": {
     "type": "git",
