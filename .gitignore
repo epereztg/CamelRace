@@ -1,7 +1,6 @@
-<<<<<<< HEAD
 CamelRace/obj
-=======
 .vs/
 CamelRace/bin/
 CamelRace/obj/
->>>>>>> StartingWithComponents
+npm-debug.log
+node_modules/
