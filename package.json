@@ -1,0 +1,23 @@
+{
+  "name": "camel-race",
+  "version": "1.0.0",
+  "description": "Camel Race - tasks list app",
+  "entryPoint" :"D://Projects//CamelRace//CamelRace//app//js//app.js",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+	
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/epereztg/CamelRace.git"
+  },
+  "author": "e.perez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/epereztg/CamelRace/issues"
+  },
+  "homepage": "https://github.com/epereztg/CamelRace#readme"
+}
