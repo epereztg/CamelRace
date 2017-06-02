@@ -107,6 +107,9 @@
     <Content Include="app\img\camel.jfif" />
     <Content Include="app\img\walkingCamel.gif" />
     <Content Include="app\bar-list\bar-list.component.js" />
+    <Content Include="dist\all.js" />
+    <Content Include="gulpfile.js" />
+    <Content Include="index_debug.html" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

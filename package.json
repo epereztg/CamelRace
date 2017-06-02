@@ -6,11 +6,13 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-jsonminify": "^1.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
-    "start":"echo \"Hola\"",
+    "start": "echo \"Hola\"",
     "gulp": "gulp",
     "saludo": "echo \"Hola Elena\""
   },
